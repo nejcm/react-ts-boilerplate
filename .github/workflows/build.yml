@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [master, beta, next, develop]
+  pull_request:
+    branches: [master, beta, next, develop]
+
+jobs:
+  test:
+    name: Running tests...
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install and Test
+        run: |
+          npm install
+          npm run validate
+      - name: Build
+        run: npm run build

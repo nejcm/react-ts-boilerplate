@@ -1,0 +1,41 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "react-app",
+    "kentcdodds",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "plugins": ["react", "@typescript-eslint", "jest"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "react/jsx-boolean-value": 0,
+    "react/no-adjacent-inline-elements": "off",
+    "react/prop-types": "off",
+    "valid-jsdoc": ["warn"],
+    "no-bitwise": "off",
+    "no-negated-condition": "off",
+    "arrow-parens": "error",
+    "no-console": "warn",
+    "no-eval": "error",
+    "no-debugger": "error",
+    "no-unused-vars": "error"
+  }
+}

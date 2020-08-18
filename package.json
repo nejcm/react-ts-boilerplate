@@ -1,28 +1,109 @@
 {
-  "name": "react-ts-starter",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
-    "@types/react-dom": "^16.9.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3",
-    "typescript": "~3.7.2"
+  "name": "react-ts-boilerplate",
+  "version": "0.0.0-semantically-released",
+  "author": "Nejc Mursic <nmursi2@gmail.com> (https://github.com/nejcm)",
+  "description": "React typescript boilerplate for my projects. Based on create-react-app.",
+  "license": "MIT",
+  "main": "index.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nejcm/react-ts-boilerplate"
   },
+  "bugs": {
+    "url": "https://github.com/nejc/react-ts-boilerplate/issues"
+  },
+  "homepage": "https://github.com/nejcm/react-ts-boilerplate",
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "keywords": [
+    "react",
+    "library",
+    "js",
+    "typescript",
+    "es6"
+  ],
+  "files": [
+    "build"
+  ],
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test:cov": "react-scripts test --coverage --colors --watchAll=false && jest-coverage-badges",
+    "eject": "react-scripts eject",
+    "format": "prettier ./src/**/*.(js|jsx|ts|tsx) --write",
+    "clean": "rimraf build coverage",
+    "lint": "eslint ./",
+    "lint:fix": "eslint ./ --fix",
+    "validate": "npm run format && npm run lint && npm run test:build"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {
+    "@emotion/core": "^10.0.35",
+    "@testing-library/jest-dom": "^5.11.3",
+    "@testing-library/react": "^10.4.8",
+    "@testing-library/user-event": "^12.1.1",
+    "@types/jest": "^26.0.10",
+    "@types/node": "^14.6.0",
+    "@types/react": "^16.9.46",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-redux": "^7.1.9",
+    "@types/react-router-dom": "^5.1.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.3",
+    "typescript": "~3.9.7",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.0.7",
+    "@semantic-release/npm": "^7.0.5",
+    "@semantic-release/release-notes-generator": "^9.0.1",
+    "babel-eslint": "10.1.0",
+    "babel-loader": "8.1.0",
+    "eslint-config-kentcdodds": "^14.14.2",
+    "eslint-plugin-react-hooks": "^4.1.0",
+    "husky": "^4.2.5",
+    "jest-coverage-badges": "^1.1.2",
+    "lint-staged": "^10.2.11",
+    "prettier": "2.0.5",
+    "react-error-boundary": "^2.3.1",
+    "react-query": "^2.5.14",
+    "react-redux": "^7.2.1",
+    "react-router-dom": "5.2.0",
+    "redux": "4.0.5",
+    "redux-logger": "3.0.6",
+    "rimraf": "^3.0.2",
+    "semantic-release": "^17.1.1",
+    "webpack": "4.42.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/**/*.d.ts",
+      "!src/serviceWorker.js",
+      "!src/index.{js,jsx,ts,tsx}"
+    ],
+    "coverageReporters": [
+      "json-summary",
+      "json",
+      "lcov",
+      "text"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 10,
+        "functions": 10,
+        "lines": 10,
+        "statements": 10
+      }
+    }
   },
   "browserslist": {
     "production": [

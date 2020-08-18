@@ -1,0 +1,31 @@
+language: node_js
+cache: npm
+notifications:
+  email: false
+env:
+  - TEST=test
+node_js:
+  - lts/*
+  - node
+install: npm install
+script:
+  - npm run validate
+branches:
+  only:
+    - master
+    - next
+    - beta
+
+jobs:
+  include:
+    - stage: release
+      # if: branch = master AND commit_message =~ /^[0-9]*\.[0-9]*\.[0-9]*$/
+      if: branch = master AND type != pull_request
+      node_js: lts/*
+      env:
+        - PRODUCTION=production
+      script:
+        - npm run build
+      after_success:
+        - echo "Deploying to npm ..."
+        - npm run semantic-release
