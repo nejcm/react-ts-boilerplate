@@ -33,7 +33,7 @@
     "test": "react-scripts test",
     "test:cov": "react-scripts test --coverage --colors --watchAll=false && jest-coverage-badges",
     "eject": "react-scripts eject",
-    "format": "prettier ./src/**/*.(js|jsx|ts|tsx) --write",
+    "format": "prettier ./src/**/*.{js,jsx,ts,tsx} --write",
     "clean": "rimraf build coverage",
     "lint": "eslint ./",
     "lint:fix": "eslint ./ --fix",
