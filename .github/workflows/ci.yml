@@ -7,8 +7,8 @@ on:
     branches: [master, beta, next, develop]
 
 jobs:
-  test:
-    name: Running tests...
+  build:
+    name: Building project...
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -16,32 +16,29 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Use node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
 
-      - name: Install and Test
-        run: |
-          npm install
-          npm run validate
+      - name: Cache node modules
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: ~/.npm
+          key:
+            ${{ runner.os }}-build-${{ env.cache-name }}-${{
+            hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
+      - name: Install
+        run: npm install
+
+      - name: Test
+        run: npm run validate
+
       - name: Build
         run: npm run build
-
-  release:
-    name: Running tests...
-    runs-on: ubuntu-latest
-    needs: test
-    strategy:
-      matrix:
-        node-version: [12.x]
-
-    steps:
-      - uses: actions/checkout@v2
-      - name: Use node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
 
       - name: Release
         if: ${{ github.event_name == 'push' }}
