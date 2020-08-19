@@ -37,7 +37,8 @@
     "clean": "rimraf build coverage",
     "lint": "eslint ./",
     "lint:fix": "eslint ./ --fix",
-    "validate": "npm run format && npm run lint && npm run test"
+    "validate": "npm run format && npm run lint && npm run test",
+    "release": "semantic-release"
   },
   "dependencies": {
     "@emotion/core": "^10.0.35",

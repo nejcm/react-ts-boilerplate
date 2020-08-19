@@ -15,19 +15,17 @@
 <br />
 
 <!-- prettier-ignore-start -->
-[![NPM][npm-badge]][npm-link] 
-[![JavaScript Style Guide][style-guide-badge]][style-guide]
 
-[![Build Status][build-badge]][build]
+[![CI][build-badge]][build]
 [![Semantic release][semantic-release-badge]][semantic-release]
-[![Code Coverage][coverage-badge]][coverage]
-[![version][version-badge]][package] [![downloads][downloads-badge]][npmtrends]
+[![version][version-badge]][package]
 [![MIT License][license-badge]][license]
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 [![PRs Welcome][prs-badge]][prs] [![Code of Conduct][coc-badge]][coc]
+[![JavaScript Style Guide][style-guide-badge]][style-guide]
 
 [![Watch on GitHub][github-watch-badge]][github-watch]
 [![Star on GitHub][github-star-badge]][github-star]
@@ -191,12 +189,10 @@ Reach out to us at one of the following places:
 
 [all-contributors]: https://github.com/all-contributors/all-contributors
 [bugs]: https://github.com/nejcm/react-ts-boilerplate/issues?q=is%3Aissue+is%3Aopen+label%3Abug+sort%3Acreated-desc
-[build-badge]: https://img.shields.io/travis/com/nejcm/react-ts-boilerplate.svg
-[build]: https://travis-ci.com/nejcm/react-ts-boilerplate
+[build-badge]: https://github.com/nejcm/react-ts-boilerplate/workflows/CI/badge.svg
+[build]: https://github.com/nejcm/react-ts-boilerplate/actions?query=workflow%3ACI
 [coc-badge]: https://img.shields.io/badge/code%20of-conduct-ff69b4.svg
 [coc]: https://github.com/nejcm/react-ts-boilerplate/blob/master/CODE_OF_CONDUCT.md
-[coverage-badge]: https://img.shields.io/codecov/c/github/nejcm/react-ts-boilerplate.svg
-[coverage]: https://codecov.io/github/nejcm/react-ts-boilerplate
 [downloads-badge]: https://img.shields.io/npm/dm/@nejcm/react-ts-boilerplate.svg
 [email]: nmursi2@gmail.com
 [emojis]: https://github.com/all-contributors/all-contributors#emoji-key
@@ -206,7 +202,7 @@ Reach out to us at one of the following places:
 [github-watch-badge]: https://img.shields.io/github/watchers/nejcm/react-ts-boilerplate.svg?style=social
 [github-watch]: https://github.com/nejcm/react-ts-boilerplate/watchers
 [good-first-issue]: https://github.com/nejcm/react-ts-boilerplate/issues?utf8=✓&q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc+label%3A"good+first+issue"+
-[license-badge]: https://img.shields.io/npm/l/@nejcm/react-ts-boilerplate.svg
+[license-badge]: https://img.shields.io/badge/License-MIT-yellow.svg
 [license]: https://github.com/nejcm/react-ts-boilerplate/blob/master/LICENSE
 [linkedin]: https://www.linkedin.com/in/nejcm/
 [node]: https://nodejs.org
