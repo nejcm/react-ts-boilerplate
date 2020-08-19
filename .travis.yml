@@ -28,4 +28,4 @@ jobs:
         - npm run build
       after_success:
         - echo "Deploying to npm ..."
-        - npm run semantic-release
+        - npm run release
