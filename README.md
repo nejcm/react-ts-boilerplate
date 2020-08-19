@@ -87,7 +87,7 @@
 
 ## 💿 Installation
 
-This module is distributed via [npm][npm] which is bundled with [node][node].
+Clone the repository and install dependencies:
 
 ```shell
 git clone https://github.com/nejcm/react-ts-boilerplate.git my-project
@@ -189,11 +189,10 @@ Reach out to us at one of the following places:
 
 [all-contributors]: https://github.com/all-contributors/all-contributors
 [bugs]: https://github.com/nejcm/react-ts-boilerplate/issues?q=is%3Aissue+is%3Aopen+label%3Abug+sort%3Acreated-desc
-[build-badge]: https://github.com/nejcm/react-ts-boilerplate/workflows/CI/badge.svg
+[build-badge]: https://github.com/nejcm/react-ts-boilerplate/workflows/CI/CD/badge.svg?branch=master
 [build]: https://github.com/nejcm/react-ts-boilerplate/actions?query=workflow%3ACI
 [coc-badge]: https://img.shields.io/badge/code%20of-conduct-ff69b4.svg
 [coc]: https://github.com/nejcm/react-ts-boilerplate/blob/master/CODE_OF_CONDUCT.md
-[downloads-badge]: https://img.shields.io/npm/dm/@nejcm/react-ts-boilerplate.svg
 [email]: nmursi2@gmail.com
 [emojis]: https://github.com/all-contributors/all-contributors#emoji-key
 [github]: https://github.com/nejcm
@@ -207,10 +206,6 @@ Reach out to us at one of the following places:
 [linkedin]: https://www.linkedin.com/in/nejcm/
 [node]: https://nodejs.org
 [npm]: https://www.npmjs.com/
-[npm-badge]: https://img.shields.io/npm/v/@nejcm/react-ts-boilerplate.svg
-[npm-link]: https://www.npmjs.com/package/@nejcm/react-ts-boilerplate
-[npmtrends]: http://www.npmtrends.com/@nejcm/react-ts-boilerplate
-[package]: https://www.npmjs.com/package/@nejcm/react-ts-boilerplate
 [prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg
 [prs]: http://makeapullrequest.com
 [requests]: https://github.com/nejcm/react-ts-boilerplate/issues?q=is%3Aissue+sort%3Areactions-%2B1-desc+label%3Aenhancement+is%3Aopen
@@ -218,7 +213,7 @@ Reach out to us at one of the following places:
 [semantic-release]: https://github.com/semantic-release/semantic-release
 [style-guide-badge]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
 [style-guide]: https://standardjs.com
-[version-badge]: https://img.shields.io/npm/v/@nejcm/react-ts-boilerplate.svg
+[version-badge]: https://img.shields.io/github/v/release/nejcm/react-ts-boilerplate
 [website]: https://nejcmursic.com/
 
 <!-- prettier-ignore-end -->

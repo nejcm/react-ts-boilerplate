@@ -27,5 +27,5 @@ jobs:
       script:
         - npm run build
       after_success:
-        - echo "Deploying to npm ..."
+        - echo "Releasing..."
         - npm run release
