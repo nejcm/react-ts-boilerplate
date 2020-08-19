@@ -92,7 +92,7 @@
 This module is distributed via [npm][npm] which is bundled with [node][node].
 
 ```shell
-git clone https://github.com/nejcm/react-boilerplate.git my-project
+git clone https://github.com/nejcm/react-ts-boilerplate.git my-project
 npm install
 ```
 
@@ -190,39 +190,39 @@ Reach out to us at one of the following places:
 <!-- prettier-ignore-start -->
 
 [all-contributors]: https://github.com/all-contributors/all-contributors
-[bugs]: https://github.com/nejcm/react-boilerplate/issues?q=is%3Aissue+is%3Aopen+label%3Abug+sort%3Acreated-desc
-[build-badge]: https://img.shields.io/travis/com/nejcm/react-boilerplate.svg
-[build]: https://travis-ci.com/nejcm/react-boilerplate
+[bugs]: https://github.com/nejcm/react-ts-boilerplate/issues?q=is%3Aissue+is%3Aopen+label%3Abug+sort%3Acreated-desc
+[build-badge]: https://img.shields.io/travis/com/nejcm/react-ts-boilerplate.svg
+[build]: https://travis-ci.com/nejcm/react-ts-boilerplate
 [coc-badge]: https://img.shields.io/badge/code%20of-conduct-ff69b4.svg
-[coc]: https://github.com/nejcm/react-boilerplate/blob/master/CODE_OF_CONDUCT.md
-[coverage-badge]: https://img.shields.io/codecov/c/github/nejcm/react-boilerplate.svg
-[coverage]: https://codecov.io/github/nejcm/react-boilerplate
-[downloads-badge]: https://img.shields.io/npm/dm/@nejcm/react-boilerplate.svg
+[coc]: https://github.com/nejcm/react-ts-boilerplate/blob/master/CODE_OF_CONDUCT.md
+[coverage-badge]: https://img.shields.io/codecov/c/github/nejcm/react-ts-boilerplate.svg
+[coverage]: https://codecov.io/github/nejcm/react-ts-boilerplate
+[downloads-badge]: https://img.shields.io/npm/dm/@nejcm/react-ts-boilerplate.svg
 [email]: nmursi2@gmail.com
 [emojis]: https://github.com/all-contributors/all-contributors#emoji-key
 [github]: https://github.com/nejcm
-[github-star-badge]: https://img.shields.io/github/stars/nejcm/react-boilerplate.svg?style=social
-[github-star]: https://github.com/nejcm/react-boilerplate/stargazers
-[github-watch-badge]: https://img.shields.io/github/watchers/nejcm/react-boilerplate.svg?style=social
-[github-watch]: https://github.com/nejcm/react-boilerplate/watchers
-[good-first-issue]: https://github.com/nejcm/react-boilerplate/issues?utf8=✓&q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc+label%3A"good+first+issue"+
-[license-badge]: https://img.shields.io/npm/l/@nejcm/react-boilerplate.svg
-[license]: https://github.com/nejcm/react-boilerplate/blob/master/LICENSE
+[github-star-badge]: https://img.shields.io/github/stars/nejcm/react-ts-boilerplate.svg?style=social
+[github-star]: https://github.com/nejcm/react-ts-boilerplate/stargazers
+[github-watch-badge]: https://img.shields.io/github/watchers/nejcm/react-ts-boilerplate.svg?style=social
+[github-watch]: https://github.com/nejcm/react-ts-boilerplate/watchers
+[good-first-issue]: https://github.com/nejcm/react-ts-boilerplate/issues?utf8=✓&q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc+label%3A"good+first+issue"+
+[license-badge]: https://img.shields.io/npm/l/@nejcm/react-ts-boilerplate.svg
+[license]: https://github.com/nejcm/react-ts-boilerplate/blob/master/LICENSE
 [linkedin]: https://www.linkedin.com/in/nejcm/
 [node]: https://nodejs.org
 [npm]: https://www.npmjs.com/
-[npm-badge]: https://img.shields.io/npm/v/@nejcm/react-boilerplate.svg
-[npm-link]: https://www.npmjs.com/package/@nejcm/react-boilerplate
-[npmtrends]: http://www.npmtrends.com/@nejcm/react-boilerplate
-[package]: https://www.npmjs.com/package/@nejcm/react-boilerplate
+[npm-badge]: https://img.shields.io/npm/v/@nejcm/react-ts-boilerplate.svg
+[npm-link]: https://www.npmjs.com/package/@nejcm/react-ts-boilerplate
+[npmtrends]: http://www.npmtrends.com/@nejcm/react-ts-boilerplate
+[package]: https://www.npmjs.com/package/@nejcm/react-ts-boilerplate
 [prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg
 [prs]: http://makeapullrequest.com
-[requests]: https://github.com/nejcm/react-boilerplate/issues?q=is%3Aissue+sort%3Areactions-%2B1-desc+label%3Aenhancement+is%3Aopen
+[requests]: https://github.com/nejcm/react-ts-boilerplate/issues?q=is%3Aissue+sort%3Areactions-%2B1-desc+label%3Aenhancement+is%3Aopen
 [semantic-release-badge]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
 [semantic-release]: https://github.com/semantic-release/semantic-release
 [style-guide-badge]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
 [style-guide]: https://standardjs.com
-[version-badge]: https://img.shields.io/npm/v/@nejcm/react-boilerplate.svg
+[version-badge]: https://img.shields.io/npm/v/@nejcm/react-ts-boilerplate.svg
 [website]: https://nejcmursic.com/
 
 <!-- prettier-ignore-end -->
