@@ -1,3 +1,5 @@
+# ⚠️ This repo was moved into [project-boilerplates](https://github.com/nejcm/project-boilerplates)
+
 # React ts boilerplate
 
 <blockquote>Starter kit for my react typescript projects</blockquote>
